@@ -27,8 +27,16 @@ class FeedController extends Controller
 
         $page = $request->get('page', 1);
 
-        $news = NewFeedModel::orderBy('publication_date', 'DESC')
-            ->paginate($perPage, ['*'], 'page', $page);
+        $filter = $request->get('filter');
+
+        $news = NewFeedModel::orderBy('publication_date', 'DESC');
+
+        if (!empty($filter)) {
+            $news->where('title', 'LIKE', "%{$filter}%")
+                ->orWhere('description', 'LIKE', "%{$filter}%");
+        }
+
+        $news = $news->paginate($perPage, ['*'], 'page', $page);
 
         return new FeedNewCollection($news);
     }
