@@ -1,13 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: gabrieluser
- * Date: 12/31/18
- * Time: 12:18 PM
- */
 
 namespace App\Services\V1\GloboFeed;
-
 
 use App\Services\V1\GloboFeed\Data\Collection\FeedCollection;
 use App\Services\V1\GloboFeed\Data\Entity\Feed;
