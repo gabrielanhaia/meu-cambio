@@ -13,8 +13,8 @@ Route::group([
 });
 
 Route::group([
-    'middleware' => 'api',
-    'prefix' => 'feed'
+    'middleware' => ['api', 'auth:api'],
+    'prefix' => 'news'
 ], function ($router) {
     Route::get('', 'Api\V1\FeedController@listNews');
     Route::get('{identifier}', 'Api\V1\FeedController@showNews');
