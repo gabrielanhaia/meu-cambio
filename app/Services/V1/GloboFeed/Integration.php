@@ -12,6 +12,7 @@ namespace App\Services\V1\GloboFeed;
 use App\Services\V1\GloboFeed\Data\Collection\FeedCollection;
 use App\Services\V1\GloboFeed\Data\Entity\Feed;
 use GuzzleHttp\Client;
+use GuzzleHttp\ClientInterface;
 
 /**
  * Classe responsável pela integração com o feed da Globo.
@@ -20,6 +21,22 @@ use GuzzleHttp\Client;
  */
 class Integration implements Contract\FeedIntegration
 {
+    /** @var ClientInterface $httpClient Cliente para requisições HTTP. */
+    private $httpClient;
+
+    /**
+     * Integration constructor.
+     * @param null $httpClient Cliente HTTP.
+     */
+    public function __construct($httpClient = null)
+    {
+        if (empty($httpClient)) {
+            $httpClient = new Client();
+        }
+
+        $this->httpClient = $httpClient;
+    }
+
     /**
      * {@inheritdoc}
      * @throws \Exception
@@ -27,8 +44,12 @@ class Integration implements Contract\FeedIntegration
     public function getFeed(): FeedCollection
     {
         try {
-            $guzzleClient = new Client();
-            $response = $guzzleClient->get('http://pox.globo.com/rss/g1/economia');
+            $response = $this->httpClient->get('http://pox.globo.com/rss/g1/economia');
+
+            if (empty($response)) {
+                throw new \Exception;
+            }
+
         } catch (\Exception $exception) {
             throw new \Exception('Erro na leitura do Feed.');
         }
@@ -36,6 +57,11 @@ class Integration implements Contract\FeedIntegration
         try {
             $xmlRawData = $response->getBody()->getContents();
             $xmlObject = simplexml_load_string($xmlRawData);
+
+            if (empty($xmlObject)) {
+                throw new \Exception;
+            }
+
         } catch (\Exception $exception) {
             throw new \Exception('Erro na leitura do XML retornado do Feed.');
         }

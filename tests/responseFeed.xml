@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss
+        xmlns:atom="http://www.w3.org/2005/Atom"
+        xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+    <channel>
+        <title>G1 &gt; Economia</title>
+        <link>http://g1.globo.com/economia/index.html</link>
+        <description>Indicadores e notícias sobre a economia no Brasil e no mundo. Dados para posicionamento de empresários e dicas para gerir suas finanças pessoais.</description>
+        <language>pt-BR</language>
+        <copyright>© Copyright Globo Comunicação e Participações S.A.</copyright>
+        <atom:link href="http://pox.globo.com/rss/g1/economia" rel="self" type="application/rss+xml"/>
+        <image>
+            <url>https://s2.glbimg.com/veNWQCjPmWVRAfzfLSJt35f_V58=/i.s3.glbimg.com/v1/AUTH_afd7a7aa13da4265ba6d93a18f8aa19e/pox/g1.png</url>
+            <title>G1 &gt; Economia</title>
+            <link>http://g1.globo.com/economia/index.html</link>
+            <width>144</width>
+            <height>144</height>
+        </image>
+        <item>
+            <title>Mercado estima menos inflação e alta maior do PIB em 2019</title>
+            <link>https://g1.globo.com/economia/noticia/2018/12/31/mercado-estima-menos-inflacao-e-alta-maior-do-pib-em-2019.ghtml</link>
+            <guid isPermaLink="true">https://g1.globo.com/economia/noticia/2018/12/31/mercado-estima-menos-inflacao-e-alta-maior-do-pib-em-2019.ghtml</guid>
+            <description>TEXT 1</description>
+            <category>G1</category>
+            <pubDate>Mon, 31 Dec 2018 10:30:26 -0000</pubDate>
+        </item>
+        <item>
+            <title>Pedido de aposentadoria pela regra 85/95 termina e benefício integral fica mais difícil</title>
+            <link>https://g1.globo.com/economia/noticia/2018/12/31/pedido-de-aposentadoria-pela-regra-8595-termina-e-beneficio-integral-fica-mais-dificil.ghtml</link>
+            <guid isPermaLink="true">https://g1.globo.com/economia/noticia/2018/12/31/pedido-de-aposentadoria-pela-regra-8595-termina-e-beneficio-integral-fica-mais-dificil.ghtml</guid>
+            <description>TEXT 2</description>
+            <media:content url="https://s2.glbimg.com/MfL0wuwmZxikVWfCS7B72llO1U8=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2018/y/N/6mKRJ0RxuA1hpyERb9ew/calculo-aposentadoria.png" medium="image"/>
+            <category>G1</category>
+            <pubDate>Mon, 31 Dec 2018 09:18:38 -0000</pubDate>
+        </item>
+    </channel>
+</rss>
