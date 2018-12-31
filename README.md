@@ -2,6 +2,17 @@
 
 Observações a respeito da atualização de publicações do feed: Foi criado uma estrutura de banco de dados que pode ser vista através do modelo na pasta `database`. Essa estrutura faz o cache de todas as publicações a cada 5 horas (ultima execução), porém mantive a atualização manual (poderia virar um cron) através da implementação das estrutura de Command do próprio Laravel, no item **7** deste tutorial.
 
+## Login e uso da API:
+
+Além da documentação que pode ser importada no **Postman** através do link [https://www.getpostman.com/collections/0f3de4c8c196ddfd5747](https://www.getpostman.com/collections/0f3de4c8c196ddfd5747)
+Ou pode ser importado em qualquer cliente compativel com Swagger 2.0, existe um arquivo `api_v1.yml` na raiz do projeto.
+
+O usuário padrão inserido via seed é,
+email: **test@meucambio.com.br**
+password: **root**
+
+É importante saber que a autenticação dos outros métodos é feita através de um Bearer Token (JWT) conforme o Header a baixo:
+Authorization: Bearer <token >
 
 ## Tutorial de instalação:
 
@@ -46,7 +57,6 @@ php artisan update_feed:globo
 php artisan serve
 ```
  
-9. Basta testar a API através do cliente que preferir, a coleção do postman utilizada pode ser importada a partir do link [https://www.getpostman.com/collections/0f3de4c8c196ddfd5747](https://www.getpostman.com/collections/0f3de4c8c196ddfd5747)
-Ou pode ser importado em qualquer cliente compativel com Swagger 2.0, existe um arquivo `api_v1.yml` na raiz do projeto.
+9. Basta testar a API.
 
 
