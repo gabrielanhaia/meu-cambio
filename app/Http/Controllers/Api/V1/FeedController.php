@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api\V1;
 
+use App\Enum\HttpStatusCode;
 use App\Exceptions\Api\V1\ApiException;
 use App\Http\Resources\V1\FeedNew;
 use App\Http\Resources\V1\FeedNewCollection;
@@ -54,7 +55,10 @@ class FeedController extends Controller
         $newsFeed = NewFeedModel::find($identifier);
 
         if (empty($newsFeed)) {
-            throw new ApiException('Recurso de publicação não encontrado.');
+            throw new ApiException(
+                HttpStatusCode::NOT_FOUND(),
+                'Recurso de publicação não encontrado.'
+            );
         }
 
         return new FeedNew($newsFeed);
