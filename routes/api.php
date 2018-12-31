@@ -11,3 +11,11 @@ Route::group([
     Route::post('refresh', 'Api\V1\AuthController@refresh');
     Route::post('me', 'Api\V1\AuthController@me');
 });
+
+Route::group([
+    'middleware' => 'api',
+    'prefix' => 'feed'
+], function ($router) {
+    Route::get('', 'Api\V1\FeedController@listNews');
+    Route::get('{identifier}', 'Api\V1\FeedController@showNews');
+});
