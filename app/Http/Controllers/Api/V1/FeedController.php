@@ -24,7 +24,7 @@ class FeedController extends Controller
      */
     public function listNews(Request $request)
     {
-        $perPage = $request->get('per_page', 15);
+        $perPage = $request->get('per_page', 10);
 
         $page = $request->get('page', 1);
 
