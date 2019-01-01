@@ -1,3 +1,5 @@
+[![Build Status - travis-ci](https://travis-ci.org/gabrielanhaia/meu-cambio.svg?branch=master)](https://travis-ci.org/gabrielanhaia/meu-cambio)
+
 [ENGLISH VERSION HERE](README_ENGLISH.md)
 
 # Meu Câmbio
