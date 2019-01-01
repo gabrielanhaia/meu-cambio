@@ -13,7 +13,7 @@ Default user inserted by Laravel Seed:
 email: **test@meucambio.com.br**
 password: **root**
 
-## Instalation:
+## Installation:
 
 1. Clone the project:
 ```
