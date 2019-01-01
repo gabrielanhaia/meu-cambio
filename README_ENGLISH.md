@@ -1,3 +1,5 @@
+[![Build Status - travis-ci](https://travis-ci.org/gabrielanhaia/meu-cambio.svg?branch=master)](https://travis-ci.org/gabrielanhaia/meu-cambio)
+
 # Meu Câmbio
 
 Notes on updating the feed: A database structure has been created that can be viewed in the `database` (image) folder. This structure saves all the publications (every hour of the last execution), however, I saved it as a manual task (Item 7) using the laravel command.
