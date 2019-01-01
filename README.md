@@ -1,3 +1,5 @@
+(ENGLISH VERSION HERE)[README_ENGLISH.md]
+
 # Meu Câmbio
 
 Observações a respeito da atualização de publicações do feed: Foi criado uma estrutura de banco de dados que pode ser vista através do modelo na pasta `database`. Essa estrutura faz o cache de todas as publicações a cada 5 horas (ultima execução), porém mantive a atualização manual (poderia virar um cron) através da implementação das estrutura de Command do próprio Laravel, no item **7** deste tutorial.
