@@ -47,7 +47,7 @@ php artisan jwt:secret
 ```
 php artisan migrate
 php artisan db:seed
-```
+``` 
 
 7. Execute o comando para atualizar as publicações do Feed da globo:
 ```
