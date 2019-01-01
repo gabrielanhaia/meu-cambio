@@ -11,13 +11,6 @@ Default user inserted by Laravel Seed:
 email: **test@meucambio.com.br**
 password: **root**
 
-O usuário padrão inserido via seed é,
-email: **test@meucambio.com.br**
-password: **root**
-
-É importante saber que a autenticação dos outros métodos é feita através de um Bearer Token (JWT) conforme o Header a baixo:
-Authorization: Bearer <token >
-
 ## Instalation:
 
 1. Clone the project:
