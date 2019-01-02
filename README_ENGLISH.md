@@ -17,7 +17,7 @@ password: **root**
 
 1. Clone the project:
 ```
-git clone gabrielanhaia/meu-cambio
+git clone https://github.com/gabrielanhaia/meu-cambio.git
 ```
 
 2. Make a copy of `.env.example` to `.env` in the source path of your project.
@@ -37,6 +37,7 @@ DB_PASSWORD=123123
 
 5. Open the terminal and go to the source path, execute the following commands:
 ```
+php composer.phar install # If you already have the composer: composer install
 php artisan key:generate
 php artisan jwt:secret
 ```
@@ -58,3 +59,9 @@ php artisan serve
 ```
  
 9. Test the API and Have fun!
+
+## Running the tests (PHPUnit)
+Open the project (Terminal) and run:
+```
+php vendor/bin/phpunit 
+```
