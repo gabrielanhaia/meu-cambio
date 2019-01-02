@@ -41,6 +41,7 @@ DB_PASSWORD=123123
 
 5. Abra a raiz do projeto no seu terminal e execute os seguintes comandos para atualizar sua aplicação.
 ```
+composer install
 php artisan key:generate
 php artisan jwt:secret
 ```
@@ -63,4 +64,10 @@ php artisan serve
  
 9. Basta testar a API.
 
+## Rodando os testes unitários manualmente (PHPUnit)
 
+Abra o diretório do projeto e após e execute o comando:
+```
+php vendor/bin/phpunit 
+```
+Obs: É necessário ter concluido os passos de instalação.
