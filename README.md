@@ -41,7 +41,7 @@ DB_PASSWORD=123123
 
 5. Abra a raiz do projeto no seu terminal e execute os seguintes comandos para atualizar sua aplicação.
 ```
-composer install
+php composer.phar install   #Caso já possua o composer instalado, execute apenas "composer install"
 php artisan key:generate
 php artisan jwt:secret
 ```
