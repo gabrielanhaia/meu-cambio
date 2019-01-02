@@ -22,7 +22,7 @@ Authorization: Bearer <token >
 
 1. Clone o projeto:
 ```
-git clone gabrielanhaia/meu-cambio
+git clone https://github.com/gabrielanhaia/meu-cambio.git
 ```
 
 2. Faça uma cópia do arquivo `.env.example` para `.env` na raiz do seu projeto.
