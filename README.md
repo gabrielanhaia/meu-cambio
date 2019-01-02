@@ -22,7 +22,7 @@ Authorization: Bearer <token >
 
 1. Clone o projeto:
 ```
-git clone gabrielanhaia/meu-cambio
+git clone https://github.com/gabrielanhaia/meu-cambio.git
 ```
 
 2. Faça uma cópia do arquivo `.env.example` para `.env` na raiz do seu projeto.
@@ -41,7 +41,7 @@ DB_PASSWORD=123123
 
 5. Abra a raiz do projeto no seu terminal e execute os seguintes comandos para atualizar sua aplicação.
 ```
-composer install
+php composer.phar install   #Caso já possua o composer instalado, execute apenas "composer install"
 php artisan key:generate
 php artisan jwt:secret
 ```
