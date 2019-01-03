@@ -8,7 +8,7 @@ Observações a respeito da atualização de publicações do feed: Foi criado u
 
 ## Login e uso da API:
 
-Além da documentação que pode ser importada no **Postman** através do link [https://www.getpostman.com/collections/0f3de4c8c196ddfd5747](https://www.getpostman.com/collections/0f3de4c8c196ddfd5747)
+Além da documentação que pode ser importada no **Postman** através do link [https://www.getpostman.com/collections/1386079ee46b4e09370e](https://www.getpostman.com/collections/1386079ee46b4e09370e)
 Ou pode ser importado em qualquer cliente compativel com Swagger 2.0, existe um arquivo `api_v1.yml` na raiz do projeto.
 
 O usuário padrão inserido via seed é,
