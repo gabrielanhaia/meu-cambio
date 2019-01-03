@@ -39,6 +39,7 @@ class UpdateGloboFeed extends Command
      *
      * @param FeedIntegration $feedIntegration
      * @return mixed
+     * @throws \Exception
      */
     public function handle(FeedIntegration $feedIntegration)
     {
@@ -62,6 +63,7 @@ class UpdateGloboFeed extends Command
      * Atualiza as publicações do feed.
      *
      * @param FeedIntegration $feedIntegration
+     * @throws \Exception
      */
     private function updateFeed($feedIntegration)
     {
