@@ -6,7 +6,7 @@ Notes on updating the feed: A database structure has been created that can be vi
 
 ## Login and how to use the API:
 
-In addition to this documentation, you can import my postman collection with the [https://www.getpostman.com/collections/0f3de4c8c196ddfd5747](https://www.getpostman.com/collections/0f3de4c8c196ddfd5747] link,
+In addition to this documentation, you can import my postman collection with the [https://www.getpostman.com/collections/1386079ee46b4e09370e](https://www.getpostman.com/collections/1386079ee46b4e09370e] link,
 or you can just import using Swagger 2.0 (`api_v1.yml`) using your favorite http client.
 
 Default user inserted by Laravel Seed:
